@@ -1,0 +1,29 @@
+<html>
+<head> 
+<title> teste1 </title>
+</head>
+<body>
+<script language="javascript">
+function verif(){
+if (f1.c1.checked==true && f1.c2.checked==false && f1.c3.checked==true && f1.c4.checked==false)
+{ alert ("bonne reponse");}
+else
+{ alert("erreur");}
+
+
+
+}
+
+</script>
+<fieldset>
+<form name="f1">
+<p><center> En java secript on peut declare une variable</center> </p>
+<p> <input type="checkbox" name="c1" value="1"> expliciter </p>
+<p> <input type="checkbox" name="c2" value="2"> interne    </p>
+<p> <input type="checkbox" name="c3" value="3"> impliciter </p>
+<p> <input type="checkbox" name="c4" value="4"> externe    </p>
+<p><input type="button" value="verifier" onclick="verif()" ></p>
+</form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+   <title>test</title>
+   <script language="javascript">
+function verif()
+    {
+
+        if(document.formulaire.immat=="" ||  
+        document.formulaire.immat.value.length>8)
+    { 
+        alert("erreur immat !");
+    }
+    
+    if (document.formulaire.marque=="" ||
+    document.formulaire.marque.value.length>20)
+    { 
+        alert("erreur marque !");
+    }
+
+    if (document.formulaire.couleur=="" ||
+    document.formulaire.couleur.value.length>20)
+    { 
+        alert("erreur couleur !");
+    }
+
+  if (document.formulaire.age=="" ||
+ document.formulaire.age.value.length>20)
+{ 
+        alert("erreur age !");
+    }
+    else
+    { 
+        document.formulaire.submit();
+    }
+    }
+
+</script>
+</head>
+<body>
+    <fieldset>
+    <form name="formulaire" method="poste" action="voit.php">
+ <h3><center>Agence de location de voiture</center></h3>
+ <br> Immat :  <input type="text" name="immat" placeholder="immat" zise="8"><br>
+ <br> Marque:  <input type="text" name="marque" placeholder="Marque" zise="20"><br>
+ <br> Couleur: <input type="text" name="couleur" placeholder="couleur" zise="20"><br>
+ <br> age :    <input type="text" name="age" placeholder="age" zise="30"><br>
+ <br> <input type="submit" value="Enregistrer" name="b1" onclick="verif()"> 
+ <input type="reset" value="Effacer" name="b2"><br>
+    </form>
+</fieldset>
+</body>
+</html>
